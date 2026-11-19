@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <!-- 한글이 깨지지 않도록 글자 인코딩을 UTF-8로 지정해요 -->
+  <meta charset="UTF-8">
+  <!-- 휴대폰에서도 화면 크기에 맞게 보이도록 설정해요 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 브라우저 탭에 표시되는 제목이에요 -->
+  <title>할 일 목록</title>
+  <!-- 꾸미기 파일(style.css)을 불러와요 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 화면 가운데에 놓일 흰색 카드 -->
+  <main class="container">
+    <h1>📝 할 일 목록</h1>
+
+    <!-- 입력창과 추가 버튼을 한 줄에 묶어요 -->
+    <div class="input-area">
+      <input
+        type="text"
+        id="todo-input"
+        placeholder="할 일을 입력하세요"
+        autocomplete="off"
+      >
+      <button id="add-button">추가</button>
+    </div>
+
+    <!-- 할 일이 여기에 쌓여요. 처음엔 비어 있고 script.js가 채워 넣어요 -->
+    <ul id="todo-list"></ul>
+
+    <!-- 할 일이 하나도 없을 때 보여 줄 안내 문구 -->
+    <p id="empty-message">아직 할 일이 없어요. 위에서 추가해 보세요!</p>
+  </main>
+
+  <!-- 동작 파일(script.js)을 불러와요.
+       화면 요소가 모두 만들어진 뒤에 실행되도록 body 맨 끝에 둬요 -->
+  <script src="script.js"></script>
+</body>
+</html>
